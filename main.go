@@ -2,16 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/bwmarrin/discordgo"
 
+	"rsc.io/quote"
 )
 
-
-Func main() {
-	discord, err := discordgo.new("")
-	if err != nil {
-		fmt.Println("Could not start session")
-
-	}
-	fmt.Println("Session:", discord)
+func main() {
+	fmt.Println(quote.Go())
 }
